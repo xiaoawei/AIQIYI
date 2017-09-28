@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.jude.rollviewpager.RollPagerView
+            android:id="@+id/home_rollpagerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:rollviewpager_hint_alpha="0"
+            app:rollviewpager_hint_color="#7c7c7c"
+            app:rollviewpager_hint_gravity="right"
+            app:rollviewpager_hint_paddingBottom="10dp"
+            app:rollviewpager_hint_paddingRight="10dp"
+            app:rollviewpager_play_delay="3000" />
+
+        <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+            android:id="@+id/home_player"
+            android:layout_width="match_parent"
+            android:layout_height="220dp" />
+    </LinearLayout>
+</RelativeLayout>

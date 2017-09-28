@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <declare-styleable name="MyTextTop">
+        <attr name="TopImageWidth" format="integer" />
+        <attr name="TopImageHeight" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="FitTextView">
+        <!-- 自定义属性,format属性表示该属性的单位 -->
+        <attr name="textSizePx" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="HWLayout">
+        <attr name="proportion" format="integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="Seal">
+        <attr name="scale_text_size" format="dimension" />
+        <attr name="scale_text_color" format="color" />
+        <attr name="scale_text" format="string" />
+        <attr name="scale_text_padding" format="float" />
+        <attr name="circle_stroke_width" format="dimension" />
+        <attr name="circle_color" format="color" />
+        <attr name="circle_radius" format="dimension" />
+    </declare-styleable>
+
+    <string-array name="host">
+        <item>https://</item>
+        <item>http:// </item>
+    </string-array>
+
+    <string-array name="adBlockUrl">
+        <item>img.qqee.org/</item>
+        <item>lm.</item>
+        <item>ubmcmm.baidustatic.com</item>
+        <item>cpro2.baidustatic.com</item>
+        <item>cpro.baidustatic.com</item>
+        <item>s.lianmeng.360.cn</item>
+        <item>nsclick.baidu.com</item>
+        <item>pos.baidu.com</item>
+        <item>cbjs.baidu.com</item>
+        <item>cpro.baidu.com</item>
+        <item>images.sohu.com/cs/jsfile/js/c.js</item>
+        <item>union.sogou.com/</item>
+        <item>sogou.com/</item>
+        <item>a.baidu.com</item>
+        <item>c.baidu.com</item>
+    </string-array>
+</resources>

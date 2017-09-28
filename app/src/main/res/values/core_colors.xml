@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_transparent_cc">#CCffffff</color>  <!--不透明度80%-->
+    <color name="black">#333030</color>
+    <color name="transparent">#00000000</color>
+    <color name="background">#F0ECEC</color>
+    <color name="accbackground">#F0ECdd</color>
+    <color name="abackground">#44F0ECEC</color>
+    <color name="bt_pressed">#26A69A</color>
+    <color name="bt_unpressed">#05665C</color>
+    <color name="layout_pressed">#3C5DA9</color>
+    <color name="layout_unpressed">#4E80BC</color>
+    <color name="bt_dialog_selected">#6BA3DA</color>
+    <!--<color name="gray">#999999</color>-->
+    <!--<color name="green">#68dc65</color>-->
+    <!--<color name="red">#ff2020</color>-->
+</resources>

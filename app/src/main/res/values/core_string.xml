@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_loading">正在加载...</string>
+    <string name="tip_load_error">数据加载失败</string>
+    <string name="tip_load_empty">暂无数据</string>
+    <string name="tip_load_network_error">没有可用网络</string>
+    <string name="foot_state_error">加载数据错误，请重新加载</string>
+    <string name="foot_state_empty">没有更多的数据</string>
+    <string name="foot_state_more">正在加载...请稍后</string>
+    <string name="foot_state_full">已加载全部数据</string>
+    <string name="foot_state_complete">没有更多数据了</string>
+
+    <string name="exit_app">再按一次退出程序</string>
+    <string name="not_network">当前网络不可用，请检查网络设置</string>
+    <string name="no_connections">网络好像不给力哦，请稍候再试</string>
+    <string name="http_response">服务器暂时连接不上</string>
+    <string name="time_out">网络不稳定，请稍候再试...</string>
+    <string name="error">加载数据出现错误，请稍候再试...</string>
+    <string name="load">正在加载数据，请稍候...</string>
+    <string name="no_data">连接失败,未获取到数据</string>
+    <string name="please_wait">正在加载数据，请稍候 ...</string>
+    <string name="pull_to_next">点击获取更多...</string>
+    <string name="pull_to_loading">正在加载，请稍候...</string>
+    <string name="failure">数据加载失败，请稍后再试！</string>
+    <string name="status_code_404">未知的网络请求</string>
+    <string name="status_code_500">非常抱歉，服务器异常，请稍后再试</string>
+
+    <string name="prompt">温馨提示</string>
+    <string name="do_option">操作</string>
+    <string name="setnetwork">当前无可用网络，是否设置网络？</string>
+    <string name="setting_yes_mobile">设置网络</string>
+    <string name="setting_no">取消退出</string>
+    <string name="btn_submit">提交</string>
+    <string name="btn_sure_text">确定</string>
+    <string name="btn_cancle">取消</string>
+</resources>

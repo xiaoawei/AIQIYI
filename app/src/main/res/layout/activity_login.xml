@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <com.tsg.xutil.weight.ClearEditText
+            android:id="@+id/login_phonenum"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@mipmap/edit_bg"
+            android:hint="请输入11位手机号"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingLeft="16dp"
+            android:paddingRight="6dp"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <com.tsg.xutil.weight.ClearEditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/edit_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingLeft="16dp"
+            android:paddingRight="6dp"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/login_bt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bt_pressed_bg_gray_circle"
+            android:text="登录"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/login_select"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:padding="2dp"
+                android:text="选环境"
+                android:textColor="@color/red"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

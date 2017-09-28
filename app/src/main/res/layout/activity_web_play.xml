@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/WebPlayActivity_full_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <com.tencent.smtt.sdk.WebView
+                android:id="@+id/WebPlayActivity_webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layerType="hardware"
+                android:background="@color/black" />
+
+            <ImageView
+                android:id="@+id/WebPlayActivity_full_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:padding="8dp"
+                android:src="@mipmap/full" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/WebPlayActivity_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:horizontalSpacing="5dp"
+            android:numColumns="4"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" />
+    </LinearLayout>
+
+</RelativeLayout>

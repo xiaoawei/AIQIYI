@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/baseStatus"
+        android:layout_width="match_parent" android:layout_height="20dp"
+        android:background="?attr/colorPrimary"/>
+    <include layout="@layout/actionbar_title" android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+    <RelativeLayout
+        android:id="@+id/baseView"
+        android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

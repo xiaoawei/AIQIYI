@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <color name="edit_hint">#ff808080</color>
+
+    <color name="text_color_primary">#212121</color>
+    <color name="text_second_color_primary">#727272</color>
+
+    <color name="textColor_pageTitle">#333333</color>
+    <color name="panel_divider">#e7e7e7</color>
+
+    <color name="button_disable">#cccccc</color>
+    <color name="button_blue_normal">#0099ff</color>
+    <color name="button_blue_pressed">#0178c7</color>
+    <color name="windowBackground">#f5f5f5</color>
+
+    <!--红-->
+    <color name="red">#e51c23</color>
+    <color name="red_normal">#fb9598</color>
+    <color name="dark_red">#d10108</color>
+    <color name="accent_red">#e51c23</color>
+
+    <!--粉红-->
+    <color name="pink">#ff5722</color>
+    <color name="pink_normal">#ff9d7e</color>
+    <color name="dark_pink">#d94516</color>
+    <color name="accent_pink">#ff5722</color>
+
+    <!--深红-->
+    <color name="deep_red">#E91E63</color>
+    <color name="deep_red_normal">#fe80ab</color>
+    <color name="dark_deep_red">#E91E63</color>
+    <color name="accent_deep_red">#E91E63</color>
+
+    <!--深紫色-->
+    <color name="deep_purple">#673AB7</color>
+    <color name="deep_purple_normal">#ac7efe</color>
+    <color name="dark_deep_purple">#512DA8</color>
+    <color name="accent_deep_purple">#673AB7</color>
+
+    <!--紫色-->
+    <color name="violet">#9c27b0</color>
+    <color name="violet_normal">#ec7aff</color>
+    <color name="dark_violet">#7b0290</color>
+    <color name="accent_violet">#9c27b0</color>
+
+    <!--深蓝色-->
+    <color name="deep_blue">#3f51b5</color>
+    <color name="deep_blue_normal">#7d90fe</color>
+    <color name="dark_deep_blue">#25379d</color>
+    <color name="accent_deep_blue">#3f51b5</color>
+
+    <!--蓝色-->
+    <color name="blue">#2196F3</color>
+    <color name="blue_normal">#74c1fe</color>
+    <color name="dark_blue">#1976D2</color>
+    <color name="accent_blue">#2196F3</color>
+
+    <!--浅蓝色-->
+    <color name="shallow_blue">#03a9f4</color>
+    <color name="shallow_blue_normal">#6ed1fd</color>
+    <color name="dark_shallow_blue">#017ab1</color>
+    <color name="accent_shallow_blue">#03a9f4</color>
+
+    <!--淡蓝色-->
+    <color name="light_blue">#00bcd4</color>
+    <color name="light_blue_normal">#64e6f6</color>
+    <color name="dark_light_blue">#008ea0</color>
+    <color name="accent_light_blue">#00bcd4</color>
+
+    <!--深绿色-->
+    <color name="deep_green">#009688</color>
+    <color name="deep_green_normal">#69cac1</color>
+    <color name="dark_deep_green">#005f56</color>
+    <color name="accent_deep_green">#009688</color>
+
+    <!--绿色-->
+    <color name="green">#4CAF50</color>
+    <color name="green_normal">#7dda81</color>
+    <color name="dark_green">#388E3C</color>
+    <color name="accent_green">#4CAF50</color>
+
+    <!--淡绿色-->
+    <color name="light_green">#8bc34a</color>
+    <color name="light_green_normal">#afe96b</color>
+    <color name="dark_light_green">#659929</color>
+    <color name="accent_light_green">#8bc34a</color>
+
+    <!--黄色-->
+    <color name="yellow">#ffeb3b</color>
+    <color name="yellow_normal">#fff59b</color>
+    <color name="dark_yellow">#cfbc12</color>
+    <color name="accent_yellow">#ffeb3b</color>
+
+    <!--深黄色-->
+    <color name="deep_orange">#cddc39</color>
+    <color name="deep_orange_normal">#e5f076</color>
+    <color name="dark_deep_orange">#adbb24</color>
+    <color name="accent_deep_orange">#cddc39</color>
+
+    <!--橙色-->
+    <color name="orange">#ff9800</color>
+    <color name="orange_normal">#fdb447</color>
+    <color name="dark_orange">#cc7a02</color>
+    <color name="accent_orange">#ff9800</color>
+
+    <!--淡橙色-->
+    <color name="light_orange">#ffc107</color>
+    <color name="light_orange_normal">#f3cd5c</color>
+    <color name="dark_light_orange">#ca9803</color>
+    <color name="accent_light_orange">#ffc107</color>
+
+    <!--咖啡色-->
+    <color name="brown">#795548</color>
+    <color name="brown_normal">#c29889</color>
+    <color name="dark_brown">#5D4037</color>
+    <color name="accent_brown">#795548</color>
+
+    <!--深灰色-->
+    <color name="deep_grey">#607D8B</color>
+    <color name="deep_grey_normal">#90b6c8</color>
+    <color name="dark_deep_grey">#455A64</color>
+    <color name="accent_deep_grey">#607D8B</color>
+
+    <!--灰色-->
+    <color name="gray">#9e9e9e</color>
+    <color name="gray_normal">#cecece</color>
+    <color name="dark_gray">#5e5e5e</color>
+    <color name="accent_gray">#9e9e9e</color>
+
+    <!--黑色-->
+    <color name="theme_black">#363636</color>
+    <color name="theme_black_normal">#838383</color>
+    <color name="dark_theme_black">#1f1f1f</color>
+    <color name="accent_theme_black">#363636</color>
+
+
+
+    <color name="c9">#cc3333</color>
+</resources>
