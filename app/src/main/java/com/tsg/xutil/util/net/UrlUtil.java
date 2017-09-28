@@ -36,12 +36,32 @@ public class UrlUtil {
         if (null == str) {
             return "";
         }
-        try {
+        StringBuffer stringBuffer = new StringBuffer();
+        if (str.contains("http://")) {
+            result = str.substring(str.indexOf("http://") + 7);
+            stringBuffer.append("http://");
+        }
+        if (str.contains("https://")) {
+            result = str.substring(str.indexOf("https://") + 8);
+            stringBuffer.append("https://");
+        }
+        String[] results = result.split("/");
+        for (int i = 0; i < results.length; i++) {
+            try {
+                if (i != results.length - 1) {
+                    stringBuffer.append(java.net.URLEncoder.encode(results[i], ENCODE) + "/");
+                } else {
+                    stringBuffer.append(java.net.URLEncoder.encode(results[i], ENCODE));
+                }
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+        }
+       /* try {
             result = java.net.URLEncoder.encode(str, ENCODE);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
-        }
-        return result;
+        }*/
+        return stringBuffer.toString();
     }
-
 }

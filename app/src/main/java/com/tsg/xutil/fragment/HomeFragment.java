@@ -16,7 +16,9 @@ import com.tsg.xutil.R;
 import com.tsg.xutil.adapter.LooperPictureAdapter;
 import com.tsg.xutil.base.BaseFragment;
 import com.tsg.xutil.util.DensityUtil;
+import com.tsg.xutil.util.L;
 import com.tsg.xutil.util.T;
+import com.tsg.xutil.util.net.UrlUtil;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;
@@ -79,6 +81,9 @@ public class HomeFragment extends BaseFragment {
             }
         });
 
-        playerStandard.setUp("http://58.222.29.129/videos/v0/20151128/ba/07/ad5396fdb9df6e5ece87f75d05793286.mp4", playerStandard.SCREEN_LAYOUT_NORMAL, "视频标题");
+//        playerStandard.setUp("http://58.222.29.129/videos/v0/20151128/ba/07/ad5396fdb9df6e5ece87f75d05793286.mp4", playerStandard.SCREEN_LAYOUT_NORMAL, "视频标题");
+        playerStandard.setUp("http://dl141.80s.im:920/1709/%E8%9C%98zx%EF%BC%9Ay%E9%9B%84g%E6%9D%A5/%E8%9C%98zx%EF%BC%9Ay%E9%9B%84g%E6%9D%A5.mp4", playerStandard.SCREEN_LAYOUT_NORMAL, "视频标题");
+        L.e(UrlUtil.getURLEncoderString("http://dl141.80s.im:920/1709/%E8%9C%98zx%EF%BC%9Ay%E9%9B%84g%E6%9D%A5/%E8%9C%98zx%EF%BC%9Ay%E9%9B%84g%E6%9D%A5.mp4"))
+        ;
     }
 }
