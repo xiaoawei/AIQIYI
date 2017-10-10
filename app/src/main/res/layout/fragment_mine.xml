@@ -4,4 +4,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <Button
+        android:id="@+id/mine_testPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/bt_pressed_bg_gray_circle"
+        android:text="点我测试"
+        android:textColor="@color/white" />
 </LinearLayout>
