@@ -86,8 +86,8 @@ public class TestHostActivity extends BaseActivity implements View.OnClickListen
 
         String getHostString = SPNameUtil.getStringData(this, "host");
         if (TextUtil.stringIsNull(getHostString)) {
-            setActionBarTitle("测试环境");
-            text.setText("测试环境");
+            setActionBarTitle("接口1");
+            text.setText("接口1");
         } else {
             RequestApi.host = getHostString;
             setActionBarTitle(getHostString);
@@ -110,9 +110,9 @@ public class TestHostActivity extends BaseActivity implements View.OnClickListen
         //设置各个控件的点击响应
         ListView listView = (ListView) contentView.findViewById(R.id.popup_listView);
         list = new ArrayList();
-        list.add("测试环境");
-        list.add("Demo环境");
-        list.add("公网联调环境");
+        list.add("接口1");
+        list.add("接口2");
+        list.add("接口3");
         ArrayAdapter arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
         listView.setAdapter(arrayAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -125,7 +125,7 @@ public class TestHostActivity extends BaseActivity implements View.OnClickListen
                         SPNameUtil.putStringData(TestHostActivity.this, "host", RequestApi.host);
                         text.setText("" + list.get(position));
                         setActionBarTitle("" + list.get(position));
-                        T.showLong(TestHostActivity.this, "设置成功：“测试环境”：" + RequestApi.host);
+                        T.showLong(TestHostActivity.this, "设置成功：“接口1”：" + RequestApi.host);
                         break;
                     }
                     case 1: {//Demo环境
@@ -133,7 +133,7 @@ public class TestHostActivity extends BaseActivity implements View.OnClickListen
                         SPNameUtil.putStringData(TestHostActivity.this, "host", RequestApi.host);
                         text.setText("" + list.get(position));
                         setActionBarTitle("" + list.get(position));
-                        T.showLong(TestHostActivity.this, "设置成功：“Demo环境”：" + RequestApi.host);
+                        T.showLong(TestHostActivity.this, "设置成功：“接口2”：" + RequestApi.host);
                         break;
                     }
                     case 2: {//公网联调环境
@@ -141,7 +141,7 @@ public class TestHostActivity extends BaseActivity implements View.OnClickListen
                         SPNameUtil.putStringData(TestHostActivity.this, "host", RequestApi.host);
                         text.setText("" + list.get(position));
                         setActionBarTitle("" + list.get(position));
-                        T.showLong(TestHostActivity.this, "设置成功：“公网联调环境”：" + RequestApi.host);
+                        T.showLong(TestHostActivity.this, "设置成功：“接口3”：" + RequestApi.host);
                         break;
                     }
                 }

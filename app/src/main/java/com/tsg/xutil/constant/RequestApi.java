@@ -18,9 +18,9 @@ public class RequestApi {
         if (CollectionUtil.listIsNull(list)) {
             list = new ArrayList();
         }
-        list.add("https://api.47ks.com/webcloud/?v=");//
+        list.add("http://api.662820.com/xnflv/index.php?url=");//
+        list.add("http://api.dj6u.com/dj6u/index.php?url=");//
         list.add("http://www.wmxz.wang/video.php?url=");//
-        list.add("http://api.xfsub.com/index.php?url=");//
         return list;
     }
 

@@ -1,9 +1,12 @@
 package com.tsg.xutil;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
+import com.tsg.xutil.activity.TestHostActivity;
 import com.tsg.xutil.base.BaseActivity;
 import com.tsg.xutil.base.BaseFragment;
 import com.tsg.xutil.constant.Constant;
@@ -36,6 +39,16 @@ public class MainActivity extends BaseActivity {
     }
 
     private void init() {
+        rightText.setText("选环境");
+        rightText.setTextColor(getResources().getColor(R.color.blue));
+        rightText.setVisibility(View.VISIBLE);
+        rightText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TestHostActivity.class);
+                startActivity(intent);
+            }
+        });
         setFragments();
         bottomNavigationBar
                 .addItem(new BottomNavigationItem(R.mipmap.home, "Home"))

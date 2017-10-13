@@ -6,6 +6,7 @@ import android.support.multidex.MultiDex;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.tsg.xutil.constant.RequestApi;
 import com.tsg.xutil.util.SPNameUtil;
 import com.tsg.xutil.util.TextUtil;
 
@@ -45,7 +46,7 @@ public class CoreApplication extends Application {
         String getHostString = SPNameUtil.getStringData(this, "host");
         if (TextUtil.stringIsNull(getHostString)) {
         } else {
-//            RequestApi.host = getHostString;
+            RequestApi.host = getHostString;
         }
 
 
