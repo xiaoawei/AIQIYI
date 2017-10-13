@@ -1,10 +1,13 @@
 package com.tsg.xutil.fragment;
 
+import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 
 import com.jude.rollviewpager.OnItemClickListener;
 import com.jude.rollviewpager.RollPagerView;
@@ -13,19 +16,34 @@ import com.jude.rollviewpager.hintview.IconHintView;
 import com.jude.rollviewpager.hintview.TextHintView;
 import com.tsg.xutil.MainActivity;
 import com.tsg.xutil.R;
+import com.tsg.xutil.activity.WebPlayActivity;
 import com.tsg.xutil.adapter.LooperPictureAdapter;
+import com.tsg.xutil.adapter.SearchAdapter;
 import com.tsg.xutil.base.BaseFragment;
+import com.tsg.xutil.bean.VideoInfo;
+import com.tsg.xutil.constant.Constant;
+import com.tsg.xutil.constant.RequestApi;
 import com.tsg.xutil.util.DensityUtil;
+import com.tsg.xutil.util.IOUtil;
 import com.tsg.xutil.util.L;
 import com.tsg.xutil.util.T;
+import com.tsg.xutil.util.VideoUtil;
+import com.tsg.xutil.util.net.BhResponseError;
+import com.tsg.xutil.util.net.MyXUtil;
 import com.tsg.xutil.util.net.UrlUtil;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;
 import org.xutils.view.annotation.ViewInject;
 import org.xutils.x;
 
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard;
@@ -82,7 +100,11 @@ public class HomeFragment extends BaseFragment {
         });
 
 //        playerStandard.setUp("http://58.222.29.129/videos/v0/20151128/ba/07/ad5396fdb9df6e5ece87f75d05793286.mp4", playerStandard.SCREEN_LAYOUT_NORMAL, "视频标题");
-        playerStandard.setUp("http://dl141.80s.im:920/1709/%E8%9C%98zx%EF%BC%9Ay%E9%9B%84g%E6%9D%A5/%E8%9C%98zx%EF%BC%9Ay%E9%9B%84g%E6%9D%A5.mp4", playerStandard.SCREEN_LAYOUT_NORMAL, "视频标题");
+       /* String url = "http://124.193.228.160/vhot2.qqvideo.tc.qq.com/AwJsAqGWYNlPFsAltcDr3zyvTERjrKiohxbRH7U5Qv_Y/z1400yqi82z.p702.1.mp4?sdtfrom=v1001&type=mp4&vkey=07D075448F3A4428E2D6321FB3C3CB8BC0BE7CE6E620D7B02C7CF8F8D461768EC958AE437410645D936BD0148D1DE62C73EE6ABDFA3380C7676B46E4F5EA7868FA028E57F100051750F02BF9B6FE469541192E65F80E58071B662878D81A2FBA875C37E5FCEA7AD9BFC13E3D8CCFF176E8665D4C38330F21&level=0&platform=70202&br=60&fmt=hd&sp=0&guid=9BB6E0AB3F77C183DAABC695283A37B71D0EC2E9&locid=fec1f616-1500-44bd-aa2b-1e80499125d9&size=20733259&ocid=471602348";
+        Bitmap bitmap=VideoUtil.getFirstVideoBitmap(activity,true,url);
+        playerStandard.setUp(url, playerStandard.SCREEN_LAYOUT_NORMAL, "视频标题");
+        playerStandard.thumbImageView.setImageBitmap(bitmap);*/
+
         L.e(UrlUtil.getURLEncoderString("http://dl141.80s.im:920/1709/%E8%9C%98zx%EF%BC%9Ay%E9%9B%84g%E6%9D%A5/%E8%9C%98zx%EF%BC%9Ay%E9%9B%84g%E6%9D%A5.mp4"))
         ;
     }

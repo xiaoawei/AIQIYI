@@ -12,23 +12,25 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.webkit.CookieManager;
+import android.webkit.CookieSyncManager;
+import android.webkit.WebResourceResponse;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.tencent.smtt.sdk.CookieManager;
-import com.tencent.smtt.sdk.CookieSyncManager;
-import com.tencent.smtt.sdk.WebSettings;
-import com.tencent.smtt.sdk.WebView;
-import com.tencent.smtt.sdk.WebViewClient;
 import com.tsg.xutil.R;
 import com.tsg.xutil.adapter.JiAdapter;
 import com.tsg.xutil.base.BaseActivity;
 import com.tsg.xutil.bean.VideoInfo;
 import com.tsg.xutil.constant.Constant;
 import com.tsg.xutil.constant.RequestApi;
+import com.tsg.xutil.util.ADFilterTool;
 import com.tsg.xutil.util.DensityUtil;
 import com.tsg.xutil.util.L;
 
@@ -60,13 +62,15 @@ public class WebPlayActivity extends BaseActivity {
     }
 
     private void init() {
+        webViewPlayer.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+        webViewPlayer.setBackgroundColor(getResources().getColor(android.R.color.black));
         webViewPlayer.getSettings().setJavaScriptEnabled(true);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             webViewPlayer.getSettings().setPluginState(WebSettings.PluginState.ON);
             webViewPlayer.getSettings().setAllowFileAccessFromFileURLs(true);
             webViewPlayer.getSettings().setDomStorageEnabled(true);
         }
-        webViewPlayer.getSettings().setUserAgentString("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36");
+//        webViewPlayer.getSettings().setUserAgentString("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36");
         VideoInfo videoInfo = (VideoInfo) getIntent().getSerializableExtra(Constant.VIDEOBEAN);
         //加载需要显示的网页
         videoInfo.getJiList();
@@ -82,7 +86,7 @@ public class WebPlayActivity extends BaseActivity {
 //                webViewPlayer.loadUrl(RequestApi.host + href);
                 loadCookiesUrl(webViewPlayer, RequestApi.host + href);
                 mCurrentUrl = RequestApi.host + href;
-                jumpChrom(mCurrentUrl);
+//                jumpChrom(mCurrentUrl);
             }
         });
         //设置Web视图
@@ -142,8 +146,14 @@ public class WebPlayActivity extends BaseActivity {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
 //            view.loadUrl(url);
+            L.e(url);
             loadCookiesUrl(view, url);
-            return true;
+            return false;
+        }
+
+        @Override
+        public void onLoadResource(WebView webView, String s) {
+            L.e("onLoadResource:  " + s);
         }
 
         @Override
@@ -151,11 +161,14 @@ public class WebPlayActivity extends BaseActivity {
             super.onPageFinished(view, url);
             url = mCurrentUrl.substring(mCurrentUrl.lastIndexOf("http://"));
             L.e("url : " + url);
-//            view.loadUrl("javascript:WMXZ('/A/index.php?url=" + url + "')");
+            view.loadUrl("javascript:WMXZ('/A/index.php?url=" + url + "')");
+            view.loadUrl("javascript:WMXZ('/A/index.php?url=" + url + "')");
+//            view.loadUrl("javascript:function setTop(){document.getElementById('yyjmww15343259').style.display=\"none\";}setTop();");
         }
 
-        /*@Override
+        @Override
         public WebResourceResponse shouldInterceptRequest(WebView view, String url) {
+            L.e("shouldInterceptRequest:  " + url);
             url = url.toLowerCase();
             if (!mCurrentUrl.contains(url)) {
                 if (!ADFilterTool.hasAd(WebPlayActivity.this, url)) {
@@ -167,7 +180,7 @@ public class WebPlayActivity extends BaseActivity {
                 return super.shouldInterceptRequest(view, url);
             }
 
-        }*/
+        }
     }
 
     private void loadCookiesUrl(WebView webView, String urlStr) {

@@ -32,8 +32,8 @@ public class UrlUtil {
      * @return String
      */
     public static String getURLEncoderString(String str) {
-        String result = "";
-        if (null == str) {
+       String result = "";
+      /*   if (null == str) {
             return "";
         }
         StringBuffer stringBuffer = new StringBuffer();
@@ -56,12 +56,12 @@ public class UrlUtil {
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
             }
-        }
-       /* try {
+        }*/
+        try {
             result = java.net.URLEncoder.encode(str, ENCODE);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
-        }*/
-        return stringBuffer.toString();
+        }
+        return result;
     }
 }

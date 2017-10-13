@@ -11,9 +11,10 @@
         <RelativeLayout
             android:id="@+id/WebPlayActivity_full_layout"
             android:layout_width="match_parent"
-            android:layout_height="200dp">
+            android:layout_height="200dp"
+            android:background="@color/black" >
 
-            <com.tencent.smtt.sdk.WebView
+            <WebView
                 android:id="@+id/WebPlayActivity_webView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

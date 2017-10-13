@@ -24,8 +24,9 @@ public class RequestApi {
         return list;
     }
 
-    public static String host = "http://cache.tv.qq.com/qqplayerout.swf?vid=";
-    //    public static String host = "http://www.wmxz.wang/video.php?url=";//无名2https://www.55523355.com/index.php?url=http://www.iqiyi.com/v_19rroopiy0.html
+        public static String host = "http://api.662820.com/xnflv/index.php?url=";//乐乐解析
+    //    public static String host = "http://api.dj6u.com/dj6u/index.php?url=";//全网
+//    public static String host = "http://www.wmxz.wang/video.php?url=";//无名2https://www.55523355.com/index.php?url=http://www.iqiyi.com/v_19rroopiy0.html
     //        public static String host = "http://www.sfsft.com/admin.php?url=";//无名
 //    public static String host = "http://api.xfsub.com/index.php?url=";//旋风
     public static String forwardSlashUrl = "/";

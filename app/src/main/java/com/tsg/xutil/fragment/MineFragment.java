@@ -58,7 +58,7 @@ public class MineFragment extends BaseFragment {
     private void testPlay(View view) {
         VideoInfo videoInfo = new VideoInfo();
         ArrayList jiList = new ArrayList();
-        jiList.add("c055561je44");
+        jiList.add("https://v.qq.com/x/cover/3mctyqewi1dit2p/z0024luwsv4.html");
         videoInfo.setJiList(jiList);
         Intent intent = new Intent(activity, WebPlayActivity.class);
         intent.putExtra(Constant.VIDEOBEAN, videoInfo);

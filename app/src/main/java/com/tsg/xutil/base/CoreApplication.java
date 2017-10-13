@@ -6,8 +6,6 @@ import android.support.multidex.MultiDex;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.tsg.xutil.constant.RequestApi;
-import com.tsg.xutil.util.APIWebviewTBS;
 import com.tsg.xutil.util.SPNameUtil;
 import com.tsg.xutil.util.TextUtil;
 
@@ -36,7 +34,6 @@ public class CoreApplication extends Application {
      * @Description: 初始化
      */
     private void init() {
-        APIWebviewTBS.getAPIWebview().initTbs(this);
         x.Ext.init(this);
         x.Ext.setDebug(false);
         x.Ext.setDefaultHostnameVerifier(new HostnameVerifier() {
