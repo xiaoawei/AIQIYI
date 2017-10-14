@@ -10,9 +10,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
-import com.jude.rollviewpager.OnItemClickListener;
-import com.jude.rollviewpager.RollPagerView;
-import com.jude.rollviewpager.hintview.ColorPointHintView;
 import com.tsg.xutil.MainActivity;
 import com.tsg.xutil.R;
 import com.tsg.xutil.activity.WebPlayActivity;

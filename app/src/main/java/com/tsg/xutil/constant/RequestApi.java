@@ -24,7 +24,7 @@ public class RequestApi {
         return list;
     }
 
-        public static String host = "http://api.662820.com/xnflv/index.php?url=";//乐乐解析
+    public static String host = "http://api.662820.com/xnflv/index.php?url=";//乐乐解析
     //    public static String host = "http://api.dj6u.com/dj6u/index.php?url=";//全网
 //    public static String host = "http://www.wmxz.wang/video.php?url=";//无名2https://www.55523355.com/index.php?url=http://www.iqiyi.com/v_19rroopiy0.html
     //        public static String host = "http://www.sfsft.com/admin.php?url=";//无名
@@ -35,6 +35,9 @@ public class RequestApi {
     //*****************************************************get********************************************************
     public static String getSearchResultForAi = "http://so.iqiyi.com/so/q_";//获取爱奇艺的搜索结果
     //*****************************************************post********************************************************
+
+    //*****************************************************小视频********************************************************
+    public static String host_smallVideo = "http://www.ri005.com/";
 
     /**
      * 拼接url

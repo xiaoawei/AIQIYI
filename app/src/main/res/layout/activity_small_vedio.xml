@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <WebView
+        android:id="@+id/smallVideo_webView_ri005"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/smallVideo_webView_opration_layout"/>
+    <LinearLayout
+        android:id="@+id/smallVideo_webView_opration_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray">
+        <ImageView
+            android:id="@+id/smallVideo_webView_goBack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/goback"
+            android:padding="3dp"/>
+        <ImageView
+            android:id="@+id/smallVideo_webView_flush"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/flush"
+            android:padding="6dp"/>
+        <ImageView
+            android:id="@+id/smallVideo_webView_goForward"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/goforword"
+            android:padding="6dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
